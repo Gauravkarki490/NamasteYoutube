@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-src/utils/contants.js
+/src/utils/contants.js
 /.pnp
 .pnp.js
 
