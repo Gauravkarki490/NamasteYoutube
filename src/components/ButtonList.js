@@ -6,7 +6,7 @@ const ButtonList = () => {
   const id=useId()
  
   return(
-    <div className='flex sticky top-24 z-50 bg-white'>
+    <div className='flex sticky top-24 z-30 bg-white'>
       {list.map((item,index)=>(<Button name={item} key={`button-list-${id}-${index}`}/>))}
     </div>
   )

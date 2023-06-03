@@ -4,6 +4,7 @@ import "./App.css";
 import Body from "./components/Body";
 import Head from "./components/Head";
 import MainContainer from "./components/MainContainer";
+import VideoSearchPage from "./components/VideoSearchPage";
 import WatachPage from "./components/WatachPage";
 import store from "./utils/store";
 
@@ -20,7 +21,12 @@ const appRouter = createBrowserRouter([
       {
         path:'watch',
         element:<WatachPage/>
-      }
+      },
+      {
+        path:'results',
+        element:<VideoSearchPage/>
+      },
+
     ]
   }
 ])
@@ -28,9 +34,9 @@ function App() {
   return (
     <Provider store={store}>
       <div>
-        <Head />
+
         <RouterProvider router={appRouter} />
-        <Body />
+        {/* <Body /> */}
       </div>
     </Provider>
   );
